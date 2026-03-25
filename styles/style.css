@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100vh;
+    background-image: 
+    linear-gradient(rgba(36, 42, 81, 0.916), rgba(25, 30, 65, 0.811)),
+    url('../assets/images/Layer\ 34.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    height: 70vh;
+}
+nav{
+    display: grid;
+    grid-template-columns: 0.5fr 1.2fr;
+	grid-template-rows: 50%;
+    padding: 30px 150px;
+    justify-content: center;
+}
+.nav{
+    display: grid;
+    grid-template-columns: repeat(5, 17%);
+	grid-template-rows: 10% 10% 10% 10% 10%;
+    margin-left: 180px;
+}
+ul li{
+    list-style: none;
+    color: rgb(203, 205, 217);
+    font-size: 12px;
+    margin-left: 50px;
+}
+.logo img{
+    margin-left: 100px;
+}
+.linea{
+    border-bottom: solid 2px rgb(81, 82, 108);
+    margin: 0 240px;
+}
+.div-principal{
+    position: relative;
+    place-items: center;
+    margin: 100px 0;
+    text-align: center;
+}
+.div-principal h1{
+    color: white;
+    font-size: 50px;
+    width: 800px;
+    margin-bottom: 20px;
+}
+.div-principal p{
+    color: white;
+    font-weight: 300;
+}
+button{
+    padding: 14px 50px;
+    border: 2px solid rgba(232, 69, 70);
+    border-radius: 3px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    background-color: rgba(232, 69, 70);
+    color: #fff;
+    margin-top: 50px;
+}
