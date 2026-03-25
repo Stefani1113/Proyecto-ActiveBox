@@ -1,63 +1,63 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-header{
-    height: 100vh;
-    background-image: 
-    linear-gradient(rgba(36, 42, 81, 0.916), rgba(25, 30, 65, 0.811)),
-    url('../assets/images/Layer\ 34.png');
+header {
+    background-image:
+        linear-gradient(rgba(44, 45, 73, 0.932), rgba(44, 45, 73, 0.973)),
+        url('../assets/images/Layer 34.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: "Raleway", sans-serif;
     font-weight: 600;
-    height: 70vh;
+    height: 80vh;
 }
-nav{
+nav {
     display: grid;
     grid-template-columns: 0.5fr 1.2fr;
-	grid-template-rows: 50%;
+    grid-template-rows: 50%;
     padding: 30px 150px;
     justify-content: center;
 }
-.nav{
+.nav {
     display: grid;
     grid-template-columns: repeat(5, 17%);
-	grid-template-rows: 10% 10% 10% 10% 10%;
+    grid-template-rows: 10% 10% 10% 10% 10%;
     margin-left: 180px;
 }
-ul li{
+ul li {
     list-style: none;
     color: rgb(203, 205, 217);
     font-size: 12px;
     margin-left: 50px;
 }
-.logo img{
+.logo img {
     margin-left: 100px;
 }
-.linea{
+.linea {
     border-bottom: solid 2px rgb(81, 82, 108);
     margin: 0 240px;
 }
-.div-principal{
+.div-principal {
     position: relative;
     place-items: center;
     margin: 100px 0;
     text-align: center;
 }
-.div-principal h1{
+.div-principal h1 {
     color: white;
     font-size: 50px;
     width: 800px;
     margin-bottom: 20px;
 }
-.div-principal p{
+.div-principal p {
     color: white;
     font-weight: 300;
+    width: 680px;
 }
-button{
+button {
     padding: 14px 50px;
     border: 2px solid rgba(232, 69, 70);
     border-radius: 3px;
@@ -66,4 +66,305 @@ button{
     background-color: rgba(232, 69, 70);
     color: #fff;
     margin-top: 50px;
+    cursor: pointer;
+}
+.div-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 80px 150px 40px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    place-items: center;
+}
+.div-features-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 150px 80px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    place-items: center;
+}
+.div-features div,
+.div-features-2 div {
+    padding: 20px 40px;
+}
+.div-features img,
+.div-features-2 img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+.div-features .bombillo{
+    width: 30px;
+    margin-bottom: 10px;
+}
+.div-features h1,
+.div-features-2 h1 {
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+    color: #333;
+}
+.div-features p,
+.div-features-2 p {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.7;
+    font-weight: 400;
+    width: 300px;
+}
+.div-galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+}
+.div-galeria div {
+    overflow: hidden;
+}
+.div-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+.galeria-item {
+    position: relative;
+    overflow: hidden;
+}
+.galeria-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 69, 69, 0.699);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.galeria-item:hover .galeria-overlay {
+    opacity: 1;
+}
+.galeria-overlay h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+}
+.galeria-overlay p {
+    font-family: "Raleway", sans-serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+.div-equipo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 80px 250px;
+    font-family: "Raleway", sans-serif;
+    text-align: left;
+}
+.div-equipo div {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto;
+}
+.div-equipo img.foto-equipo {
+    width: 220px;
+    object-fit: cover;
+    margin-bottom: 14px;
+}
+.div-equipo h1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+}
+.div-equipo h2 {
+    font-size: 11px;
+    color: rgba(232, 69, 70);
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+.div-equipo p {
+    font-size: 12px;
+    color: #888;
+    line-height: 1.7;
+    font-weight: 400;
+    margin-bottom: 14px;
+    width: 230px;
+}
+.div-iconos-equipo {
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    gap: 10px;
+}
+.div-iconos-equipo img{
+    box-sizing: content-box;
+    border: solid 1px rgb(229, 228, 228);
+    padding: 8px;
+}
+.facebook{
+    width: 5px;
+    height: 9px;
+}
+.twitter{
+    width: 9px;
+    height: 9px;
+}
+.linkedin{
+    width: 9px;
+    height: 9px;
+}
+.div-testimonial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 350px;
+    font-family: "Cardo", serif;
+}
+.div-testimonial-imagen {
+    overflow: hidden;
+}
+.div-testimonial-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.div-testimonial-texto {
+    background-color: rgba(82, 53, 73);
+    align-items: center;
+    padding: 60px 60px;
+}
+.div-testimonial-texto h2 {
+    font-size: 30px;
+    font-style: italic;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    width: 420px;
+}
+.div-testimonial-texto h3 {
+    font-size: 11px;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.div-puntos {
+    display: grid;
+    grid-template-columns: repeat(5, 12px);
+    gap: 6px;
+    margin-left: 30%;
+}
+.div-puntos span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: block;
+}
+.div-puntos span.activo {
+    background-color: #fff;
+}
+.div-descarga {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    padding: 80px 150px;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+.div-descarga h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.div-descarga h3 {
+    font-size: 11px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.div-footer-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(58, 62, 99);
+    padding: 60px 150px;
+    gap: 40px;
+    font-family: "Raleway", sans-serif;
+}
+.div-footer-info h2 {
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+.div-footer-info p {
+    font-size: 12px;
+    color: rgb(160, 163, 185);
+    line-height: 1.8;
+    font-weight: 300;
+}
+.div-footer-iconos {
+    display: grid;
+    grid-template-columns: repeat(3, 36px);
+    gap: 10px;
+    margin-top: 10px;
+}
+.div-footer-iconos img{
+    box-sizing: content-box;
+    border: solid 1px rgb(229, 228, 228);
+    padding: 8px;
+}
+.facebook{
+    width: 10px;
+    height: 15px;
+}
+.twitter{
+    width: 17px;
+    height: 16px;
+}
+.linkedin{
+    width: 15px;
+    height: 15px;
+}
+.location{
+    place-items: center;
+    text-align: center;
+}
+.share{
+    place-items: center;
+}
+.about{
+    place-items: center;
+    text-align: center;
+}
+.about p{
+    width: 300px;
+}
+footer {
+    background-color: rgba(49, 52, 85);
+    text-align: center;
+    padding: 20px;
+    font-family: "Raleway", sans-serif;
+}
+footer p {
+    font-size: 11px;
+    color: rgb(140, 143, 165);
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+footer span {
+    color: white;
+}
+footer .corazon{
+    color: red;
 }
