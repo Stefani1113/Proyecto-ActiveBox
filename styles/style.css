@@ -368,3 +368,247 @@ footer span {
 footer .corazon{
     color: red;
 }
+
+/*Media Queries*/
+
+@media (max-width: 1279px) {
+    nav {
+        padding: 30px 50px;
+    }
+    .nav {
+        margin-left: 50px;
+        grid-template-columns: repeat(5, 20%);
+    }
+    .logo img {
+        margin-left: 10px;
+    }
+    .linea {
+        margin: 0 50px;
+    }
+    .div-principal h1 {
+        font-size: 44px;
+    }
+    .div-features div,
+    .div-features-2 div {
+        padding: 20px 15px;
+    }
+    .div-features p,
+    .div-features-2 p {
+        width: 100%;
+    }
+    .div-features,
+    .div-features-2 {
+        padding: 60px 80px 30px;
+    }
+    .div-equipo {
+        padding: 80px 80px;
+        gap: 20px;
+    }
+    .div-equipo img.foto-equipo {
+        width: 100%;
+    }
+    .div-equipo p {
+        width: 100%;
+    }
+    .div-testimonial-texto h2 {
+        font-size: 26px;
+        width: 100%;
+    }
+    .div-footer-info {
+        padding: 60px 80px;
+    }
+    .about p {
+        width: 100%;
+    }
+    header{
+        height: 110vh;
+    }
+}
+
+@media (max-width: 920px) {
+    header {
+        height: auto;
+        padding-bottom: 40px;
+    }
+    nav {
+        grid-template-columns: 1fr;
+        padding: 20px 30px;
+        justify-items: center;
+        gap: 20px;
+    }
+    .logo img {
+        margin-left: 0;
+    }
+    .nav {
+        grid-template-columns: repeat(5, auto);
+        margin-left: 0;
+    }
+    ul li {
+        margin-left: 10px;
+        font-size: 11px;
+    }
+    .linea {
+        margin: 0 30px;
+    }
+    .div-principal {
+        margin: 60px auto;
+        padding: 0 30px;
+    }
+    .div-principal h1 {
+        font-size: 36px;
+        width: 100%;
+    }
+    .div-principal p {
+        width: 100%;
+    }
+    .div-features,
+    .div-features-2 {
+        padding: 60px 60px 60px;
+    }
+    .div-features p,
+    .div-features-2 p {
+        width: 100%;
+    }
+    .div-galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
+    .div-equipo {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 60px 40px;
+        gap: 20px;
+    }
+    .div-equipo img.foto-equipo {
+        width: 100%;
+    }
+    .div-equipo p {
+        width: 100%;
+    }
+    .div-testimonial-texto h2 {
+        font-size: 24px;
+        width: 100%;
+    }
+    .div-footer-info {
+        padding: 40px 40px;
+    }
+    .about p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .div-features,
+    .div-features-2 {
+        grid-template-columns: 1fr;
+        padding: 30px 80px 10px;
+    }
+    .div-features div,
+    .div-features-2 div {
+        padding: 15px 20px;
+    }
+    .div-features h1,
+    .div-features-2 h1 {
+        font-size: 11px;
+    }
+    .div-features p,
+    .div-features-2 p {
+        font-size: 11px;
+    }
+    .div-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 200px);
+    }
+    .div-equipo {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 70px 60px;
+        gap: 40px;
+    }
+    .div-testimonial {
+        grid-template-columns: 1fr;
+    }
+    .div-testimonial-imagen {
+        height: 300px;
+    }
+    .div-testimonial-texto {
+        padding: 50px 40px;
+    }
+    .div-testimonial-texto h2 {
+        font-size: 20px;
+        width: 100%;
+    }
+    .div-puntos {
+        margin-left: 0;
+    }
+    .div-descarga {
+        padding: 60px 40px;
+    }
+    .div-descarga h2 {
+        font-size: 22px;
+    }
+    .div-footer-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 40px 60px;
+        gap: 30px;
+    }
+    .div-footer-iconos {
+        justify-content: center;
+        margin: 10px auto 0;
+    }
+    .location,
+    .share,
+    .about {
+        display: grid;
+        justify-items: center;
+    }
+    .about p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: 10px;
+        text-align: center;
+    }
+    .div-principal h1 {
+        font-size: 26px;
+    }
+    .div-principal p {
+        font-size: 13px;
+    }
+    button {
+        padding: 12px 30px;
+    }
+    .div-features,
+    .div-features-2 {
+        grid-template-columns: 1fr;
+        padding: 20px 50px;
+    }
+    .div-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 160px);
+    }
+    .div-equipo {
+        grid-template-columns: repeat(1,1fr);
+        padding: 40px 80px;
+        gap: 40px;
+    }
+    .div-testimonial-texto h2 {
+        font-size: 18px;
+    }
+    .div-testimonial-texto h3 {
+        font-size: 10px;
+    }
+    .div-descarga h2 {
+        font-size: 18px;
+    }
+    .div-descarga h3 {
+        font-size: 10px;
+    }
+    .div-footer-info {
+        padding: 40px 30px;
+    }
+}
